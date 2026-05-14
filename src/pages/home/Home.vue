@@ -1,28 +1,33 @@
 <template>
   <main class="home">
-    <h1 class="home__title">ОЦ №5</h1>
-    <p class="home__subtitle">Добро пожаловать!</p>
+    <LatestNewsSection :data="latestNews" />
+    <FirstBanner :banner="firstBanner" />
+    <StaticInfoGrid
+      v-for="section in staticSections"
+      :key="section.id"
+      :section="section"
+    />
+    <SchoolQuestionsBanner :banner="schoolQuestionsBanner" />
   </main>
 </template>
 
 <script setup>
+import homeBanners from '../../mocks/home-banners.json'
+import homeLatestNews from '../../mocks/home-latest-news.json'
+import schoolQuestionsBanner from '../../mocks/home-school-questions-banner.json'
+import staticSections from '../../mocks/home-static-tiles.json'
+
+import FirstBanner from '../../components/home/FirstBanner.vue'
+import LatestNewsSection from '../../components/home/LatestNewsSection.vue'
+import SchoolQuestionsBanner from '../../components/home/SchoolQuestionsBanner.vue'
+import StaticInfoGrid from '../../components/home/StaticInfoGrid.vue'
+
+const firstBanner = homeBanners[0]
+const latestNews = homeLatestNews
 </script>
 
 <style scoped>
 .home {
-  padding: 2rem 1rem;
-  text-align: center;
-}
-
-.home__title {
-  margin: 0 0 0.5rem;
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-.home__subtitle {
-  margin: 0;
-  font-size: 1rem;
-  opacity: 0.8;
+  width: 100%;
 }
 </style>

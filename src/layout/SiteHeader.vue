@@ -39,21 +39,23 @@
       </a>
 
       <nav class="site-header__nav" aria-label="Основная навигация">
-        <a class="site-header__link" href="#about">
-          <span class="site-header__link-text">О школе</span>
-        </a>
-        <a class="site-header__link" href="#news">
-          <span class="site-header__link-text">Новости</span>
-        </a>
-        <a class="site-header__link" href="#parents">
-          <span class="site-header__link-text">Родителям</span>
-        </a>
-        <a class="site-header__link" href="#students">
-          <span class="site-header__link-text">Ученикам</span>
-        </a>
-        <a class="site-header__link" href="#contacts">
-          <span class="site-header__link-text">Контакты</span>
-        </a>
+        <div class="site-header__nav-inner">
+          <a class="site-header__link" href="#about">
+            <span class="site-header__link-text">О школе</span>
+          </a>
+          <a class="site-header__link" href="#news">
+            <span class="site-header__link-text">Новости</span>
+          </a>
+          <a class="site-header__link" href="#parents">
+            <span class="site-header__link-text">Родителям</span>
+          </a>
+          <a class="site-header__link" href="#students">
+            <span class="site-header__link-text">Ученикам</span>
+          </a>
+          <a class="site-header__link" href="#contacts">
+            <span class="site-header__link-text">Контакты</span>
+          </a>
+        </div>
       </nav>
 
       <div class="site-header__right">
@@ -83,9 +85,6 @@
   </header>
 </template>
 
-<script setup>
-</script>
-
 <style scoped>
 .site-header {
   position: sticky;
@@ -100,32 +99,30 @@
   justify-content: space-between;
   align-items: center;
   padding: 32px 32px 40px;
-  gap: 92px;
+  gap: 40px;
 
   position: relative;
   width: 100%;
   max-width: 1920px;
-  height: 136px;
+  min-height: 136px;
   margin: 0 auto;
   background: #ffffff;
+  box-sizing: border-box;
 }
 
 .site-header__logo {
-  margin: 0 auto;
-  width: 64px;
-  height: 64px;
+  margin: 0;
+  width: clamp(48px, 3.4vw, 64px);
+  height: clamp(48px, 3.4vw, 64px);
   background: #ffffff;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-
+  flex: 0 0 auto;
   text-decoration: none;
 }
 
 .site-header__logo-svg {
   display: block;
-  width: 64px;
-  height: 64px;
+  width: 100%;
+  height: 100%;
 }
 
 .site-header__nav {
@@ -134,15 +131,18 @@
   justify-content: center;
   align-items: center;
   padding: 0;
+  margin: 0;
+  height: auto;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.site-header__nav-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   gap: 60px;
-
-  margin: 0 auto;
-  width: 786px;
-  height: 40px;
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .site-header__link {
@@ -151,25 +151,9 @@
   font-family: 'Rubik', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: clamp(14px, 1.25vw, 24px);
+  line-height: 1.2;
   white-space: nowrap;
-}
-
-.site-header__link:nth-child(1) {
-  width: 95px;
-}
-.site-header__link:nth-child(2) {
-  width: 99px;
-}
-.site-header__link:nth-child(3) {
-  width: 128px;
-}
-.site-header__link:nth-child(4) {
-  width: 113px;
-}
-.site-header__link:nth-child(5) {
-  width: 111px;
 }
 
 .site-header__right {
@@ -178,14 +162,9 @@
   align-items: center;
   padding: 0;
   gap: 32px;
-
-  margin: 0 auto;
-  width: 324px;
-  height: 48px;
-
-  flex: none;
-  order: 2;
-  flex-grow: 0;
+  margin: 0;
+  height: auto;
+  flex: 0 0 auto;
 }
 
 .site-header__icon {
@@ -197,11 +176,9 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 9px 16px;
+  padding: 9px 14px;
   gap: 10.27px;
-
-  width: 205px;
-  height: 48px;
+  min-height: 44px;
   background: #837ddf;
   border-radius: 30px;
 
@@ -209,56 +186,90 @@
 }
 
 .site-header__offsite-btn-text {
-  width: 186px;
-  height: 24px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   font-family: 'Rubik', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: clamp(12px, 1.04vw, 20px);
+  line-height: 1.2;
   color: #ffffff;
-  flex: none;
+}
+
+@media (max-width: 1440px) {
+  .site-header__container {
+    padding: 24px 20px 28px;
+    gap: 24px;
+  }
 }
 
 @media (max-width: 1200px) {
   .site-header__container {
-    padding: 24px 16px 28px;
-    gap: 32px;
+    padding: 18px 16px 22px;
+    gap: 16px;
     height: auto;
-    align-items: flex-start;
+    min-height: 0;
   }
 
-  .site-header__nav {
-    gap: 28px;
-    width: auto;
-    flex-wrap: wrap;
-    height: auto;
+  .site-header__nav-inner {
+    gap: clamp(12px, 3.5vw, 48px);
   }
 
-  .site-header__link {
-    font-size: 18px;
-    line-height: 22px;
+  .site-header__icon svg {
+    width: 20px;
+    height: 20px;
   }
 
   .site-header__right {
-    gap: 16px;
-    width: auto;
-    height: auto;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    gap: clamp(10px, 2.5vw, 32px);
   }
 
   .site-header__offsite-btn {
-    width: auto;
-    padding: 9px 14px;
+    padding: 7px 10px;
+    min-height: 36px;
+  }
+}
+
+@media (max-width: 900px) {
+  .site-header__container {
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .site-header__nav {
+    justify-content: center;
+    justify-content: unsafe center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  .site-header__nav-inner {
+    width: max-content;
+    flex-shrink: 0;
+    gap: clamp(8px, 2.8vw, 28px);
+  }
+
+  .site-header__link {
+    font-size: 13px;
+  }
+
+  .site-header__right {
+    margin-left: 0;
+    flex: 0 0 auto;
+    gap: clamp(6px, 2.5vw, 20px);
+  }
+
+  .site-header__offsite-btn {
+    padding: 6px 8px;
+    min-height: 32px;
   }
 
   .site-header__offsite-btn-text {
-    width: auto;
+    font-size: 11px;
   }
 }
 </style>

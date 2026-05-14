@@ -30,23 +30,22 @@
           <div class="site-footer__email">
             <a class="site-footer__text-link" href="mailto:oc-5@bk.ru">oc-5@bk.ru</a>
           </div>
-
-          <div class="site-footer__social">
-            <a class="site-footer__social-link" href="#" aria-label="VK">
-              <img
-                class="site-footer__social-icon"
-                src="/assets/vk_logo.png"
-                alt=""
-              />
-            </a>
-            <a class="site-footer__social-link" href="#" aria-label="Мессенджер">
-              <img
-                class="site-footer__social-icon"
-                src="/assets/max_logo.png"
-                alt=""
-              />
-            </a>
-          </div>
+        </div>
+        <div class="site-footer__social">
+          <a class="site-footer__social-link" href="#" aria-label="VK">
+            <img
+              class="site-footer__social-icon"
+              src="/assets/vk_logo.png"
+              alt=""
+            />
+          </a>
+          <a class="site-footer__social-link" href="#" aria-label="Мессенджер">
+            <img
+              class="site-footer__social-icon"
+              src="/assets/max_logo.png"
+              alt=""
+            />
+          </a>
         </div>
 
         <div class="site-footer__address">
@@ -159,7 +158,7 @@ const year = computed(() => new Date().getFullYear())
 .site-footer__frame-row {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   padding: 0;
   gap: 160px;
@@ -192,6 +191,7 @@ const year = computed(() => new Date().getFullYear())
   padding: 0;
   gap: 25px;
   width: 133px;
+  min-height: 54px;
 }
 
 .site-footer__social-icon {

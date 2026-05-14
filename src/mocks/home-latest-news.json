@@ -1,0 +1,44 @@
+{
+  "featured": {
+    "id": "n-2026-01",
+    "title": "III Всероссийская научно-практическая конференция по критериальному оцениванию прошла в ОЦ5",
+    "sectionLabel": "Жизнь школы",
+    "sectionSlug": "school-life",
+    "date": "23.01.26",
+    "image": "/assets/main_news.png",
+    "detailUrl": "#",
+    "sectionUrl": "#"
+  },
+  "more": [
+    {
+      "id": "n-2026-02",
+      "title": "Прошла Всеросийская олимпиада по «Русскому медвеженку». Мы среди лидеров!",
+      "sectionLabel": "Олимпиады",
+      "sectionSlug": "olympiads",
+      "date": "16.01.26",
+      "image": "/assets/news_1.png",
+      "detailUrl": "#",
+      "sectionUrl": "#"
+    },
+    {
+      "id": "n-2026-03",
+      "title": "Бал первооткрывателей: старшеклассники ОЦ5 шагнули в эпоху Просвещения",
+      "sectionLabel": "Жизнь школы",
+      "sectionSlug": "school-life",
+      "date": "01.01.26",
+      "image": "/assets/news_2.png",
+      "detailUrl": "#",
+      "sectionUrl": "#"
+    },
+    {
+      "id": "n-2025-12",
+      "title": "Команда ОЦ5 заняла призовое место на международном фестивале «ТехноСтрелка»",
+      "sectionLabel": "Соревнования",
+      "sectionSlug": "competitions",
+      "date": "12.12.25",
+      "image": "/assets/news_3.png",
+      "detailUrl": "#",
+      "sectionUrl": "#"
+    }
+  ]
+}
