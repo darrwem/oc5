@@ -216,17 +216,7 @@ function onContactClick() {
   }
 
   .school-questions__media {
-    flex: 0 1 auto;
-    align-self: stretch;
-    align-items: flex-end;
-    justify-content: center;
-    margin-top: auto;
-  }
-
-  .school-questions__image {
-    width: min(88%, 532px);
-    max-width: 100%;
-    max-height: min(56vw, 466px);
+    display: none;
   }
 }
 </style>

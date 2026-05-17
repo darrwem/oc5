@@ -2,11 +2,7 @@
   <main class="home">
     <LatestNewsSection :data="latestNews" />
     <FirstBanner :banner="firstBanner" />
-    <StaticInfoGrid
-      v-for="section in staticSections"
-      :key="section.id"
-      :section="section"
-    />
+    <StaticInfoGrid :section="staticTiles" />
     <SchoolQuestionsBanner :banner="schoolQuestionsBanner" />
   </main>
 </template>
@@ -15,7 +11,7 @@
 import homeBanners from '../../mocks/home-banners.json'
 import homeLatestNews from '../../mocks/home-latest-news.json'
 import schoolQuestionsBanner from '../../mocks/home-school-questions-banner.json'
-import staticSections from '../../mocks/home-static-tiles.json'
+import staticTiles from '../../mocks/home-static-tiles.json'
 
 import FirstBanner from '../../components/home/FirstBanner.vue'
 import LatestNewsSection from '../../components/home/LatestNewsSection.vue'

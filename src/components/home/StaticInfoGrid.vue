@@ -1,5 +1,5 @@
 <template>
-  <section class="static-grid" :style="{ paddingBottom: `${section.paddingBottom}px` }">
+  <section class="static-grid">
     <article
       v-for="(item, index) in section.items"
       :key="`${section.id}-${index}`"
@@ -27,13 +27,13 @@ defineProps({
 
 <style scoped>
 .static-grid {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(2, auto);
   gap: 32px;
   width: 100%;
   max-width: 1920px;
-  padding: 0 32px;
+  padding: 0 32px clamp(40px, 6vw, 80px);
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -44,12 +44,11 @@ defineProps({
   justify-content: space-between;
   align-items: flex-end;
   padding: 40px;
-  width: calc((100% - 96px) / 4);
   min-height: 271px;
   background: rgba(131, 125, 223, 0.5);
   border-radius: 30px;
   box-sizing: border-box;
-  flex: 1 1 0;
+  min-width: 0;
 }
 
 .static-grid__card--text {
@@ -121,31 +120,48 @@ defineProps({
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1500px) {
   .static-grid {
-    flex-wrap: wrap;
-    padding: 0 20px;
+    grid-template-columns: unset;
+    grid-template-rows: auto;
+    grid-auto-flow: column;
+    grid-auto-columns: min(86%, 18rem);
     gap: 20px;
+    padding: 0 20px clamp(40px, 6vw, 80px);
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
   }
 
-  .static-grid__card {
-    width: calc((100% - 20px) / 2);
-    min-height: 240px;
-    padding: 24px;
+  .static-grid__title {
+    font-size: 24px;
+    line-height: 1.2;
+    min-height: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .static-grid__text {
+    font-size: 18px;
+    line-height: 1.3;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 1300px) {
+  .static-grid__title {
+    font-size: 22px;
+  }
+
+  .static-grid__text {
+    font-size: 16px;
   }
 }
 
 @media (max-width: 768px) {
   .static-grid {
-    padding: 0 16px;
-  }
-
-  .static-grid__card {
-    width: 100%;
-  }
-
-  .static-grid__title {
-    font-size: 28px;
+    gap: clamp(16px, 4vw, 20px);
+    padding: 0 16px clamp(40px, 6vw, 80px);
   }
 }
 </style>
