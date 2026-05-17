@@ -5,7 +5,7 @@
     "sectionLabel": "Жизнь школы",
     "sectionSlug": "school-life",
     "date": "23.01.26",
-    "image": "/assets/main_news.png",
+    "image": "/mock_images/mock_images_LatestNewsSection/main_news.png",
     "detailUrl": "#",
     "sectionUrl": "#"
   },
@@ -16,7 +16,7 @@
       "sectionLabel": "Олимпиады",
       "sectionSlug": "olympiads",
       "date": "16.01.26",
-      "image": "/assets/news_1.png",
+      "image": "/mock_images/mock_images_LatestNewsSection/news_1.png",
       "detailUrl": "#",
       "sectionUrl": "#"
     },
@@ -26,7 +26,7 @@
       "sectionLabel": "Жизнь школы",
       "sectionSlug": "school-life",
       "date": "01.01.26",
-      "image": "/assets/news_2.png",
+      "image": "/mock_images/mock_images_LatestNewsSection/news_2.png",
       "detailUrl": "#",
       "sectionUrl": "#"
     },
@@ -36,7 +36,7 @@
       "sectionLabel": "Соревнования",
       "sectionSlug": "competitions",
       "date": "12.12.25",
-      "image": "/assets/news_3.png",
+      "image": "/mock_images/mock_images_LatestNewsSection/news_3.png",
       "detailUrl": "#",
       "sectionUrl": "#"
     }
