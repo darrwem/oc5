@@ -1,9 +1,13 @@
 <template>
   <section class="home-banner">
     <div class="home-banner__frame">
-      <img class="home-banner__image" :src="banner.image" :alt="banner.mediumText" />
+      <div class="home-banner__media">
+        <img class="home-banner__image" :src="banner.image" :alt="banner.mediumText" />
+      </div>
+
       <div class="home-banner__content">
         <p class="home-banner__text">{{ banner.description }}</p>
+
         <div class="home-banner__meta">
           <p class="home-banner__medium">{{ banner.mediumText }}</p>
           <p class="home-banner__caption">{{ banner.caption }}</p>
@@ -52,13 +56,23 @@ defineProps({
   box-sizing: border-box;
 }
 
-.home-banner__image {
+.home-banner__media {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-end;
+  justify-content: center;
   width: 33.3%;
   max-width: 606.55px;
+}
+
+.home-banner__image {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
   height: auto;
-  max-height: 500px;
   object-fit: contain;
-  flex: none;
+  object-position: bottom;
 }
 
 .home-banner__content {
