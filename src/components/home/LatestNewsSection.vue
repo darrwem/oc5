@@ -1,42 +1,87 @@
 <template>
-  <section class="latest-news" aria-labelledby="latest-news-heading">
-    <h2 id="latest-news-heading" class="latest-news__heading">Последние новости</h2>
+  <section
+    class="latest-news"
+    aria-labelledby="latest-news-heading"
+  >
+    <h2
+      id="latest-news-heading"
+      class="latest-news__heading"
+    >
+      Последние новости
+    </h2>
     <div class="latest-news__row">
       <article class="latest-news__featured">
-        <a class="latest-news__media-link" :href="data.featured.detailUrl">
+        <a
+          class="latest-news__media-link"
+          :href="data.featured.detailUrl"
+        >
           <img
             class="latest-news__featured-img"
             :src="data.featured.image"
             :alt="data.featured.title"
             loading="lazy"
-          />
+          >
         </a>
         <div class="latest-news__featured-body">
           <div class="latest-news__meta">
-            <a class="latest-news__tag latest-news__tag--lg" :href="data.featured.sectionUrl">
+            <a
+              class="latest-news__tag latest-news__tag--lg"
+              :href="data.featured.sectionUrl"
+            >
               {{ data.featured.sectionLabel }}
             </a>
-            <time class="latest-news__date latest-news__date--lg" :datetime="data.featured.date">{{
+            <time
+              class="latest-news__date latest-news__date--lg"
+              :datetime="data.featured.date"
+            >{{
               data.featured.date
             }}</time>
           </div>
-          <a class="latest-news__title latest-news__title--featured" :href="data.featured.detailUrl">
+          <a
+            class="latest-news__title latest-news__title--featured"
+            :href="data.featured.detailUrl"
+          >
             {{ data.featured.title }}
           </a>
         </div>
       </article>
 
-      <div class="latest-news__list" role="list">
-        <article v-for="item in data.more" :key="item.id" class="latest-news__compact" role="listitem">
-          <a class="latest-news__thumb-link" :href="item.detailUrl">
-            <img class="latest-news__thumb" :src="item.image" :alt="item.title" loading="lazy" />
+      <div
+        class="latest-news__list"
+        role="list"
+      >
+        <article
+          v-for="item in data.more"
+          :key="item.id"
+          class="latest-news__compact"
+          role="listitem"
+        >
+          <a
+            class="latest-news__thumb-link"
+            :href="item.detailUrl"
+          >
+            <img
+              class="latest-news__thumb"
+              :src="item.image"
+              :alt="item.title"
+              loading="lazy"
+            >
           </a>
           <div class="latest-news__compact-body">
             <div class="latest-news__meta">
-              <a class="latest-news__tag" :href="item.sectionUrl">{{ item.sectionLabel }}</a>
-              <time class="latest-news__date" :datetime="item.date">{{ item.date }}</time>
+              <a
+                class="latest-news__tag"
+                :href="item.sectionUrl"
+              >{{ item.sectionLabel }}</a>
+              <time
+                class="latest-news__date"
+                :datetime="item.date"
+              >{{ item.date }}</time>
             </div>
-            <a class="latest-news__title latest-news__title--compact" :href="item.detailUrl">{{
+            <a
+              class="latest-news__title latest-news__title--compact"
+              :href="item.detailUrl"
+            >{{
               item.title
             }}</a>
           </div>

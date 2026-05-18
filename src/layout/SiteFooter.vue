@@ -1,38 +1,97 @@
 <template>
   <footer class="site-footer">
     <div class="site-footer__top">
-      <nav class="site-footer__nav" aria-label="Навигация футтера">
-        <a class="site-footer__link" href="#about">О школе</a>
-        <a class="site-footer__link" href="#news">Новости</a>
-        <a class="site-footer__link" href="#parents">Родителям</a>
-        <a class="site-footer__link" href="#students">Ученикам</a>
-        <a class="site-footer__link" href="#contacts">Контакты</a>
+      <nav
+        class="site-footer__nav"
+        aria-label="Навигация футтера"
+      >
+        <RouterLink
+          class="site-footer__link"
+          to="#about"
+        >
+          О школе
+        </RouterLink>
+        <RouterLink
+          class="site-footer__link"
+          to="/news"
+        >
+          Новости
+        </RouterLink>
+        <RouterLink
+          class="site-footer__link"
+          to="#parents"
+        >
+          Родителям
+        </RouterLink>
+        <RouterLink
+          class="site-footer__link"
+          to="#students"
+        >
+          Ученикам
+        </RouterLink>
+        <RouterLink
+          class="site-footer__link"
+          to="#contacts"
+        >
+          Контакты
+        </RouterLink>
       </nav>
     </div>
 
     <div class="site-footer__content">
       <div class="site-footer__brand-row">
-        <img class="site-footer__brand-icon" src="/assets/oc_logo.png" alt="" />
-        <div class="site-footer__brand-title">МАОУ «Образовательный центр № 5 г. Челябинска»</div>
+        <img
+          class="site-footer__brand-icon"
+          src="/assets/oc_logo.png"
+          alt=""
+        >
+        <div class="site-footer__brand-title">
+          МАОУ «Образовательный центр № 5 г. Челябинска»
+        </div>
       </div>
 
       <div class="site-footer__frame">
         <div class="site-footer__contacts">
           <div class="site-footer__phones">
-            <a class="site-footer__text-link" href="tel:+73512145510">+7 (351) 214-55-10</a>
-            <a class="site-footer__text-link" href="tel:+73512144520">+7 (351) 214-55-20</a>
+            <a
+              class="site-footer__text-link"
+              href="tel:+73512145510"
+            >+7 (351) 214-55-10</a>
+            <a
+              class="site-footer__text-link"
+              href="tel:+73512144520"
+            >+7 (351) 214-55-20</a>
           </div>
           <div class="site-footer__email">
-            <a class="site-footer__text-link" href="mailto:oc-5@bk.ru">Почта: oc-5@bk.ru</a>
+            <a
+              class="site-footer__text-link"
+              href="mailto:oc-5@bk.ru"
+            >Почта: oc-5@bk.ru</a>
           </div>
         </div>
 
         <div class="site-footer__social">
-          <a class="site-footer__social-link" href="#" aria-label="VK">
-            <img class="site-footer__social-icon" src="/assets/vk_logo.png" alt="" />
+          <a
+            class="site-footer__social-link"
+            href="#"
+            aria-label="VK"
+          >
+            <img
+              class="site-footer__social-icon"
+              src="/assets/vk_logo.png"
+              alt=""
+            >
           </a>
-          <a class="site-footer__social-link" href="#" aria-label="Мессенджер">
-            <img class="site-footer__social-icon" src="/assets/max_logo.png" alt="" />
+          <a
+            class="site-footer__social-link"
+            href="#"
+            aria-label="Мессенджер"
+          >
+            <img
+              class="site-footer__social-icon"
+              src="/assets/max_logo.png"
+              alt=""
+            >
           </a>
         </div>
 
@@ -44,7 +103,9 @@
     </div>
 
     <div class="site-footer__bottom">
-      <div class="site-footer__copyright">© 25.05.2020 — {{ year }} МАОУ «ОЦ № 5 г. Челябинска»</div>
+      <div class="site-footer__copyright">
+        © 25.05.2020 — {{ year }} МАОУ «ОЦ № 5 г. Челябинска»
+      </div>
     </div>
   </footer>
 </template>
