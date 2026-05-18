@@ -2,10 +2,18 @@
   <section class="school-questions">
     <div class="school-questions__frame">
       <div class="school-questions__copy">
-        <h2 class="school-questions__title">{{ banner.title }}</h2>
-        <p class="school-questions__description">{{ banner.description }}</p>
+        <h2 class="school-questions__title">
+          {{ banner.title }}
+        </h2>
+        <p class="school-questions__description">
+          {{ banner.description }}
+        </p>
         <div class="school-questions__actions">
-          <button type="button" class="school-questions__btn" @click="onContactClick">
+          <button
+            type="button"
+            class="school-questions__btn"
+            @click="onContactClick"
+          >
             {{ banner.buttonLabel }}
           </button>
         </div>
@@ -16,7 +24,7 @@
           :src="banner.image"
           :alt="banner.title.replace(/\n/g, ' ')"
           loading="lazy"
-        />
+        >
       </div>
     </div>
   </section>

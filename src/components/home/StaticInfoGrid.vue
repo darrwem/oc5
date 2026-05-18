@@ -6,12 +6,30 @@
       class="static-grid__card"
       :class="{ 'static-grid__card--text': !item.link }"
     >
-      <h3 class="static-grid__title">{{ item.title }}</h3>
-      <a v-if="item.link" class="static-grid__link" :href="item.link" aria-label="Перейти">
-        <img src="/assets/tile-arrow.svg" alt="" />
+      <h3 class="static-grid__title">
+        {{ item.title }}
+      </h3>
+      <a
+        v-if="item.link"
+        class="static-grid__link"
+        :href="item.link"
+        aria-label="Перейти"
+      >
+        <img
+          src="/assets/tile-arrow.svg"
+          alt=""
+        >
       </a>
-      <p v-else-if="item.text" class="static-grid__text">{{ item.text }}</p>
-      <div v-else class="static-grid__spacer" />
+      <p
+        v-else-if="item.text"
+        class="static-grid__text"
+      >
+        {{ item.text }}
+      </p>
+      <div
+        v-else
+        class="static-grid__spacer"
+      />
     </article>
   </section>
 </template>

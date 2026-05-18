@@ -2,15 +2,25 @@
   <section class="home-banner">
     <div class="home-banner__frame">
       <div class="home-banner__media">
-        <img class="home-banner__image" :src="banner.image" :alt="banner.mediumText" />
+        <img
+          class="home-banner__image"
+          :src="banner.image"
+          :alt="banner.mediumText"
+        >
       </div>
 
       <div class="home-banner__content">
-        <p class="home-banner__text">{{ banner.description }}</p>
+        <p class="home-banner__text">
+          {{ banner.description }}
+        </p>
 
         <div class="home-banner__meta">
-          <p class="home-banner__medium">{{ banner.mediumText }}</p>
-          <p class="home-banner__caption">{{ banner.caption }}</p>
+          <p class="home-banner__medium">
+            {{ banner.mediumText }}
+          </p>
+          <p class="home-banner__caption">
+            {{ banner.caption }}
+          </p>
         </div>
       </div>
     </div>
