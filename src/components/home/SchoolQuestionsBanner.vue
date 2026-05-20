@@ -39,7 +39,6 @@ defineProps({
 })
 
 function onContactClick() {
-  /* Заглушка: позже откроется pop-up формы обратной связи */
 }
 </script>
 
@@ -52,10 +51,8 @@ function onContactClick() {
   --sqb-copy-pad-y: clamp(24px, 4.5vw, 58px);
   --sqb-copy-gap: clamp(28px, 4vw, 56px);
   --sqb-title-size: clamp(28px, 2.65vw + 0.5rem, 51px);
-  /* Figma: line-height 60px при font-size ~50.93px */
   --sqb-title-lh: calc(60 / 50.9321 * 1em);
   --sqb-body-size: clamp(18px, 1.25vw + 0.65rem, 32px);
-  /* Figma: line-height 38px */
   --sqb-body-lh: calc(38 / 31.8326 * 1em);
   --sqb-btn-pad: clamp(10px, 1.1vw, 13px);
   --sqb-radius: 30px;
@@ -158,7 +155,6 @@ function onContactClick() {
   border: 2px solid #ffffff;
   border-radius: var(--sqb-radius);
   min-height: clamp(48px, 3.3vw, 64px);
-  /* как у .static-grid__link: transparent, transition, hover → #fff */
   background: transparent;
   font-family: 'Rubik', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
   font-style: normal;

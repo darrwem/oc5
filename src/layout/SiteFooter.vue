@@ -31,7 +31,7 @@
         </RouterLink>
         <RouterLink
           class="site-footer__link"
-          to="#contacts"
+          to="/contacts"
         >
           Контакты
         </RouterLink>
@@ -226,20 +226,26 @@ const year = computed(() => new Date().getFullYear())
 
 .site-footer__contacts {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: flex-start;
   gap: var(--sf-gap-contacts);
   width: 100%;
-  max-width: min(100%, 201px);
+  max-width: min(100%, 1207px);
 }
 
 .site-footer__phones,
 .site-footer__email {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: flex-start;
   gap: var(--sf-gap-contacts);
-  width: 100%;
+  width: auto;
+}
+
+.site-footer__phones {
+  margin-right: clamp(8px, 1.6vw, 20px);
 }
 
 .site-footer__social {
@@ -345,6 +351,20 @@ const year = computed(() => new Date().getFullYear())
     --sf-social-size: clamp(22px, 5.9vw, 32px);
     --sf-font-copy: clamp(10px, 2.67vw, 14px);
     --sf-lh-copy: calc(12 / 10 * 1em);
+  }
+
+  .site-footer__contacts {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-footer__phones,
+  .site-footer__email {
+    width: 100%;
+  }
+
+  .site-footer__phones {
+    margin-right: 0;
   }
 }
 </style>

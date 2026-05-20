@@ -24,18 +24,12 @@
         </a>
         <div class="latest-news__featured-body">
           <div class="latest-news__meta">
-            <a
-              class="latest-news__tag latest-news__tag--lg"
-              :href="data.featured.sectionUrl"
-            >
-              {{ data.featured.sectionLabel }}
-            </a>
-            <time
-              class="latest-news__date latest-news__date--lg"
-              :datetime="data.featured.date"
-            >{{
-              data.featured.date
-            }}</time>
+            <SectionDateChip
+              :section-label="data.featured.sectionLabel"
+              :section-to="`/news/${data.featured.sectionSlug}`"
+              :date="data.featured.date"
+              large
+            />
           </div>
           <a
             class="latest-news__title latest-news__title--featured"
@@ -69,14 +63,11 @@
           </a>
           <div class="latest-news__compact-body">
             <div class="latest-news__meta">
-              <a
-                class="latest-news__tag"
-                :href="item.sectionUrl"
-              >{{ item.sectionLabel }}</a>
-              <time
-                class="latest-news__date"
-                :datetime="item.date"
-              >{{ item.date }}</time>
+              <SectionDateChip
+                :section-label="item.sectionLabel"
+                :section-to="`/news/${item.sectionSlug}`"
+                :date="item.date"
+              />
             </div>
             <a
               class="latest-news__title latest-news__title--compact"
@@ -92,6 +83,8 @@
 </template>
 
 <script setup>
+import SectionDateChip from '../news/SectionDateChip.vue'
+
 defineProps({
   data: {
     type: Object,
@@ -239,43 +232,6 @@ defineProps({
   align-items: center;
   gap: var(--ln-gap-inner);
   width: 100%;
-}
-
-.latest-news__tag {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: clamp(8px, 1.1vw, 12px) clamp(10px, 1.5vw, 14px);
-  border-radius: 30px;
-  background: var(--ln-tag-bg);
-  font-family: 'Rubik', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: var(--ln-tag-sm);
-  line-height: var(--ln-lh-compact);
-  color: #ffffff;
-  text-decoration: none;
-  box-sizing: border-box;
-  max-width: 100%;
-}
-
-.latest-news__tag--lg {
-  font-size: var(--ln-tag-lg);
-  line-height: var(--ln-lh-featured);
-}
-
-.latest-news__date {
-  font-family: 'Rubik', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: var(--ln-tag-sm);
-  line-height: var(--ln-lh-compact);
-  color: var(--ln-date);
-}
-
-.latest-news__date--lg {
-  font-size: var(--ln-tag-lg);
-  line-height: var(--ln-lh-featured);
 }
 
 .latest-news__title {

@@ -1,43 +1,43 @@
 {
   "featured": {
-    "id": "n-2026-01",
+    "id": "1",
     "title": "III Всероссийская научно-практическая конференция по критериальному оцениванию прошла в ОЦ5",
     "sectionLabel": "Жизнь школы",
     "sectionSlug": "school-life",
     "date": "23.01.26",
-    "image": "/mock_images/mock_images_LatestNewsSection/main_news.png",
-    "detailUrl": "#",
+    "image": "/mock_images/LatestNewsSection/main_news.png",
+    "detailUrl": "/news/school-life/criteria-conference-oc5",
     "sectionUrl": "#"
   },
   "more": [
     {
-      "id": "n-2026-02",
+      "id": "2",
       "title": "Прошла Всеросийская олимпиада по «Русскому медвеженку». Мы среди лидеров!",
       "sectionLabel": "Олимпиады",
       "sectionSlug": "olympiads",
       "date": "16.01.26",
-      "image": "/mock_images/mock_images_LatestNewsSection/news_1.png",
-      "detailUrl": "#",
+      "image": "/mock_images/LatestNewsSection/news_1.png",
+      "detailUrl": "/news/olympiads/russian-bear-olympiad-leaders",
       "sectionUrl": "#"
     },
     {
-      "id": "n-2026-03",
+      "id": "3",
       "title": "Бал первооткрывателей: старшеклассники ОЦ5 шагнули в эпоху Просвещения",
       "sectionLabel": "Жизнь школы",
       "sectionSlug": "school-life",
       "date": "01.01.26",
-      "image": "/mock_images/mock_images_LatestNewsSection/news_2.png",
-      "detailUrl": "#",
+      "image": "/mock_images/LatestNewsSection/news_2.png",
+      "detailUrl": "/news/school-life/first-discoverers-ball",
       "sectionUrl": "#"
     },
     {
-      "id": "n-2025-12",
+      "id": "4",
       "title": "Команда ОЦ5 заняла призовое место на международном фестивале «ТехноСтрелка»",
       "sectionLabel": "Соревнования",
       "sectionSlug": "competitions",
       "date": "12.12.25",
-      "image": "/mock_images/mock_images_LatestNewsSection/news_3.png",
-      "detailUrl": "#",
+      "image": "/mock_images/LatestNewsSection/news_3.png",
+      "detailUrl": "/news/competitions/techno-strelka-prize-place",
       "sectionUrl": "#"
     }
   ]

@@ -72,7 +72,7 @@
           </RouterLink>
           <RouterLink
             class="site-header__link"
-            to="#contacts"
+            to="/contacts"
           >
             <span class="site-header__link-text">Контакты</span>
           </RouterLink>
