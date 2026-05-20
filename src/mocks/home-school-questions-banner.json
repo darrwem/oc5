@@ -1,0 +1,8 @@
+{
+  "id": "school-questions",
+  "name": "Баннер с вопросами о школе",
+  "title": "Есть вопросы о Школе?\nНапишите нам",
+  "description": "Задайте вопрос онлайн или запишитесь на очную встречу с директором",
+  "buttonLabel": "Связаться с нами",
+  "image": "/mock_images/SchoolQuestionsBanner/rupor.png"
+}

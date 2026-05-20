@@ -1,0 +1,10 @@
+{
+  "image": "/mock_images/Contacts/contacts.png",
+  "email": "oc-5@bk.ru",
+  "phones": [
+    "+7 (351) 214-55-10",
+    "+7 (351) 214-55-20"
+  ],
+  "address": "Челябинск, ул. Скульптора Головницкого, д. 13",
+  "mapLinkUrl": "https://yandex.ru/maps/-/CPs9u45n"
+}

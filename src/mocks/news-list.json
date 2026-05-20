@@ -1,0 +1,86 @@
+[
+  {
+    "id": "1",
+    "date": "23.01.26",
+    "title": "III Всероссийская научно-практическая конференция по критериальному оцениванию прошла в ОЦ5",
+    "description": "19-20 ноября 2025 года в Школе 800 состоялась III Всероссийская научно-практическая конференция «СКО как инструмент управления для учителя, ученика, руководителя». Мероприятие было организовано Центром психологического сопровождения образования «ТОЧКА ПСИ» (Москва) и Школой 800 при поддержке министерства образования и науки Нижегородской области.",
+    "sectionLabel": "Жизнь школы",
+    "sectionSlug": "school-life",
+    "image": "/mock_images/NewsList/latest_news.png",
+    "symbolCode": "criteria-conference-oc5",
+    "detailUrl": "/news/school-life/criteria-conference-oc5",
+    "sectionUrl": "#"
+  },
+  {
+    "id": "2",
+    "date": "16.01.26",
+    "title": "Прошла Всеросийская олимпиада по “Русскому медвеженку”. Мы среди лидеров!",
+    "description": "",
+    "sectionLabel": "Олимпиады",
+    "sectionSlug": "olympiads",
+    "image": "/mock_images/NewsList/news_1.png",
+    "symbolCode": "russian-bear-olympiad-leaders",
+    "detailUrl": "/news/olympiads/russian-bear-olympiad-leaders",
+    "sectionUrl": "#"
+  },
+  {
+    "id": "3",
+    "date": "01.01.26",
+    "title": "Бал первооткрывателей: старшеклассники ОЦ5 шагнули в эпоху Просвещения",
+    "description": "",
+    "sectionLabel": "Жизнь школы",
+    "sectionSlug": "school-life",
+    "image": "/mock_images/NewsList/news_2.png",
+    "symbolCode": "first-discoverers-ball",
+    "detailUrl": "/news/school-life/first-discoverers-ball",
+    "sectionUrl": "#"
+  },
+  {
+    "id": "4",
+    "date": "12.12.25",
+    "title": "Команда ОЦ5 заняла призовое место на международном фестивале «ТехноСтрелка»",
+    "description": "",
+    "sectionLabel": "Соревнования",
+    "sectionSlug": "competitions",
+    "image": "/mock_images/NewsList/news_3.png",
+    "symbolCode": "techno-strelka-prize-place",
+    "detailUrl": "/news/competitions/techno-strelka-prize-place",
+    "sectionUrl": "#"
+  },
+  {
+    "id": "5",
+    "date": "10.12.25",
+    "title": "Встречаем гостей: делегация из Воронежа ознакомилась с особенностями образовательной модели",
+    "description": "",
+    "sectionLabel": "Жизнь школы",
+    "sectionSlug": "school-life",
+    "image": "/mock_images/NewsList/news_4.png",
+    "symbolCode": "voronezh-delegation-visit",
+    "detailUrl": "/news/school-life/voronezh-delegation-visit",
+    "sectionUrl": "#"
+  },
+  {
+    "id": "6",
+    "date": "30.11.25",
+    "title": "Единство в многообразии: в ОЦ5 с размахом провели Фестиваль народов России",
+    "description": "",
+    "sectionLabel": "Жизнь школы",
+    "sectionSlug": "school-life",
+    "image": "/mock_images/NewsList/news_5.png",
+    "symbolCode": "festival-of-russian-peoples",
+    "detailUrl": "/news/school-life/festival-of-russian-peoples",
+    "sectionUrl": "#"
+  },
+  {
+    "id": "7",
+    "date": "02.09.25",
+    "title": "Яркий старт: День знаний торжественно отметили во всех корпусах Школы 800",
+    "description": "",
+    "sectionLabel": "Жизнь школы",
+    "sectionSlug": "school-life",
+    "image": "/mock_images/NewsList/news_6.png",
+    "symbolCode": "knowledge-day-bright-start",
+    "detailUrl": "/news/school-life/knowledge-day-bright-start",
+    "sectionUrl": "#"
+  }
+]
