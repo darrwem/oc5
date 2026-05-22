@@ -1,4 +1,3 @@
-```html
 <template>
   <main class="contacts-page">
     <div class="contacts-page__container">
@@ -111,45 +110,42 @@ const breadcrumbsItems = computed(() => [
 
 .contacts-page__layout {
   width: 100%;
-  padding: 0 32px 80px;
+  padding: 0 0 80px;
   box-sizing: border-box;
 }
 
 .contacts-page__row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
 
   width: 100%;
   max-width: 1856px;
-  min-height: 604px;
+
+  align-items: stretch;
+  box-sizing: border-box;
 }
 
 .contacts-page__image-wrapper {
-  width: 50%;
-  flex-shrink: 0;
+  height: 100%;
 }
 
 .contacts-page__image {
   width: 100%;
-  height: 604px;
+  height: 100%;
 
   display: block;
-
   object-fit: cover;
   border-radius: 30px;
 }
 
 .contacts-page__content {
-  width: 50%;
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
 
-  min-height: 604px;
+  height: 100%;
 }
 
 .contacts-page__org,
@@ -204,21 +200,12 @@ const breadcrumbsItems = computed(() => [
   }
 
   .contacts-page__layout {
-    padding: 0 16px 40px;
+    padding: 0 0 40px;
   }
 
   .contacts-page__row {
-    flex-direction: column;
-    align-items: stretch;
-
+    grid-template-columns: 1fr;
     gap: 24px;
-
-    min-height: auto;
-  }
-
-  .contacts-page__image-wrapper,
-  .contacts-page__content {
-    width: 100%;
   }
 
   .contacts-page__image {
@@ -227,7 +214,7 @@ const breadcrumbsItems = computed(() => [
   }
 
   .contacts-page__content {
-    min-height: auto;
+    height: auto;
     gap: 20px;
   }
 
@@ -260,10 +247,6 @@ const breadcrumbsItems = computed(() => [
 
   .contacts-page__header {
     margin-bottom: 24px;
-  }
-
-  .contacts-page__row {
-    gap: 20px;
   }
 
   .contacts-page__content {
